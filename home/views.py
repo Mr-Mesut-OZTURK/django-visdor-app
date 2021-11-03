@@ -4,4 +4,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("<h1>Visdor App</h1>")
+    return render(request, 'home/index.html')
+
+def about(request):
+    return render(request, 'home/about.html')
+
+def teachers(request):
+    return render(request, 'home/teachers.html')
